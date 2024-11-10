@@ -1,0 +1,40 @@
+﻿@page
+@using ToDoListApp.Models
+@model ToDoListApp.Pages.IndexModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>AppToDo</title>
+    <link rel="stylesheet" href="~/css/Styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <h1 class="app-title">To Do List</h1>
+        <form class="new-do-input" method="post" action="Index/Add">
+            <input class="new-do-input-text" type="text" name="desc" placeholder="Добавить новое действие" />
+            <input class="new-do-input-submit" type="submit" value="Добавить" />
+        </form>
+        <div class="all-tasks">
+            @foreach (TaskToDo task in Model.Tasks)
+            {
+                <div class="form-container">
+                    <form method="post" class="task" id="@task.Id" action="Index/Edit">
+                        <input class="task-desc" type="text" value="@task.Description" name="desc" />
+                        <input type="hidden" value="@task.Id" name="id" />
+                        <input class="edit-btn" type="submit" value="Р" name="action" id="@task.Id" />
+                    </form>
+                    <form method="post" class="task-del" id="@task.Id" action="Index/Del">
+                        <input type="hidden" value="@task.Id" name="id" />
+                        <input class="delete-btn" type="submit" value="У" name="action" id="@task.Id" />
+                    </form>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>

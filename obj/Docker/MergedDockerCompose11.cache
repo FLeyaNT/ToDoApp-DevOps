@@ -1,0 +1,38 @@
+name: dockercompose8763955688342488870
+services:
+  apptodolistdb:
+    container_name: app-to-do_list-db
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: Password12345
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      apptodolist: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+  todolistapp:
+    build:
+      context: D:\Apps\ToDoListApp
+      dockerfile: ToDoListApp/Dockerfile
+    depends_on:
+      apptodolistdb:
+        condition: service_started
+        required: true
+    environment:
+      DB_HOST: apptodolistdb
+      DB_NAME: ToDoList
+      DB_PASSWORD: Password12345
+    image: todolistapp
+    networks:
+      apptodolist: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8080"
+        protocol: tcp
+networks:
+  apptodolist:
+    name: dockercompose8763955688342488870_apptodolist
