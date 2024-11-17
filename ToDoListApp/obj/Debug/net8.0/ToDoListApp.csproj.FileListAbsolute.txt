@@ -138,3 +138,4 @@ D:\Apps\ToDoListApp\ToDoListApp\obj\Debug\net8.0\refint\ToDoListApp.dll
 D:\Apps\ToDoListApp\ToDoListApp\obj\Debug\net8.0\ToDoListApp.pdb
 D:\Apps\ToDoListApp\ToDoListApp\obj\Debug\net8.0\ToDoListApp.genruntimeconfig.cache
 D:\Apps\ToDoListApp\ToDoListApp\obj\Debug\net8.0\ref\ToDoListApp.dll
+D:\Apps\ToDoListApp\ToDoListApp\obj\Debug\net8.0\ToDoListApp.sourcelink.json

@@ -4,16 +4,27 @@
     position: relative;
     min-height: 100%;
     font-family: "Inter", sans-serif;
+    background-color: #0d1012;
+    overflow: hidden;
+}
+
+:root {
+    --transition: .2s cubic-bezier(.2, .6, 0, 1);
 }
 
 .main {
     margin: 0 auto;
     max-width: 800px;
     margin-top: 70px;
+    z-index: 1;
 }
 
 .app-title {
-    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    background: linear-gradient(90deg, #ff3e9f,#fc4e00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .new-do-input {
@@ -27,7 +38,16 @@
     width: 80%;
     height: 50px;
     font-size: 18px;
+    margin-right: 5px;
+    border-radius: 7px;
+    border: 2px solid #ff3e9f;
+    outline: none;
+    transition: .4s;
 }
+
+    .new-do-input-text:focus {
+        box-shadow: 0px 0px 27px 3px rgba(255, 62, 159, 0.2);
+    }
 
 .new-do-input-submit {
     width: 20%;
@@ -36,6 +56,8 @@
     font-weight: 800;
     font-size: 18px;
     border: none;
+    border-radius: 7px;
+    background: linear-gradient(27deg, #ff3e9f,#fc4e00);
 }
 
     .new-do-input-submit:hover {
@@ -45,11 +67,21 @@
 .form-container {
     display: flex;
     flex-direction: row;
-    background-color: gainsboro;
+    background-color: #40484f;
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 5px;
+    border: 2px solid #ff3e9f;
+    transform: translateY(10vh);
+    opacity: 0;
 }
+
+    .form-container.appeared {
+        transform: translateY(0vh);
+        opacity: 1;
+        transition: transform var(--transition), opacity var(--transition);
+        transition-duration: 3s;
+    }
 
 .task {
     display: flex;
@@ -62,10 +94,13 @@
     width: 100%;
     border: none;
     padding: 5px 0;
-    background-color: gainsboro;
+    background-color: #40484f;
     font-size: 18px;
     font-weight: 100;
+    color: white;
+    outline: none;
 }
+
 
 .task input[type=submit], .task-del input[type=submit] {
     width: 30px;
@@ -78,12 +113,37 @@
 
 input[type=submit] {
     cursor: pointer;
+    font-weight: 600;
 }
 
 .edit-btn {
-    background-color: aquamarine;
+    background-color: lawngreen;
 }
 
 .delete-btn {
-    background-color: indianred;
+    background-color: red;
+}
+
+.color_one {
+    height: 60vh;
+    width: 40vw;
+    background-color: #ff3e9f;
+    position: absolute;
+    top: -10vh;
+    left: -15vw;
+    z-index: -1;
+    filter: blur(240px);
+    border-radius: 100px;
+}
+
+.color_two {
+    height: 60vh;
+    width: 40vw;
+    background-color: #fc4e00;
+    position: absolute;
+    bottom: -10vh;
+    right: -15vw;
+    z-index: -1;
+    filter: blur(240px);
+    border-radius: 100px;
 }
