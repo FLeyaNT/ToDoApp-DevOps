@@ -13,4 +13,4 @@ Docker Compose несет в себе два сервиса:
 
 Ненужные задачи можно кдалить нажав на красную кнопку У.
 
-![image](https://github.com/user-attachments/assets/582d0f61-debc-4a83-8590-194335c75c2d)
+![image](https://github.com/user-attachments/assets/d21a5b3e-b684-4152-ae40-c2a91904e887)
