@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Apps\\ToDoListApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6497570-0479-4165-8D2B-62D26A35C037}|ToDoListApp\\ToDoListApp.csproj|d:\\apps\\todolistapp\\todolistapp\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E6497570-0479-4165-8D2B-62D26A35C037}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E6497570-0479-4165-8D2B-62D26A35C037}|ToDoListApp\\ToDoListApp.csproj|d:\\apps\\todolistapp\\todolistapp\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{E6497570-0479-4165-8D2B-62D26A35C037}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6497570-0479-4165-8D2B-62D26A35C037}|ToDoListApp\\ToDoListApp.csproj|d:\\apps\\todolistapp\\todolistapp\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E6497570-0479-4165-8D2B-62D26A35C037}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6497570-0479-4165-8D2B-62D26A35C037}|ToDoListApp\\ToDoListApp.csproj|d:\\apps\\todolistapp\\todolistapp\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E6497570-0479-4165-8D2B-62D26A35C037}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,44 +32,45 @@
         },
         {
           "DockedWidth": 232,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "site.js",
               "DocumentMoniker": "D:\\Apps\\ToDoListApp\\ToDoListApp\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "ToDoListApp\\wwwroot\\js\\site.js",
               "ToolTip": "D:\\Apps\\ToDoListApp\\ToDoListApp\\wwwroot\\js\\site.js",
               "RelativeToolTip": "ToDoListApp\\wwwroot\\js\\site.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-14T17:17:53.063Z"
+              "WhenOpened": "2024-11-14T17:17:53.063Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Apps\\ToDoListApp\\ToDoListApp\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "ToDoListApp\\Pages\\Index.cshtml",
               "ToolTip": "D:\\Apps\\ToDoListApp\\ToDoListApp\\Pages\\Index.cshtml",
               "RelativeToolTip": "ToDoListApp\\Pages\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAoAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAgwA0AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-13T15:36:53.01Z"
+              "WhenOpened": "2024-11-13T15:36:53.01Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Styles.css",
               "DocumentMoniker": "D:\\Apps\\ToDoListApp\\ToDoListApp\\wwwroot\\css\\Styles.css",
               "RelativeDocumentMoniker": "ToDoListApp\\wwwroot\\css\\Styles.css",
               "ToolTip": "D:\\Apps\\ToDoListApp\\ToDoListApp\\wwwroot\\css\\Styles.css",
               "RelativeToolTip": "ToDoListApp\\wwwroot\\css\\Styles.css",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-09T10:14:54.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T10:14:54.275Z"
             }
           ]
         }

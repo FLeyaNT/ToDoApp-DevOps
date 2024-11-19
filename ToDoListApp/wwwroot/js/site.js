@@ -5,14 +5,16 @@ for (let i = 0; i < items.length; i++) {
     element.style.transitionDuration = `${3 + i}s`;
 }
 
-document.addEventListener('onbeforeunload', function () {
-    setTimeout(() => {
-        console.log("Загрузка");
-    }, 1000);
-});
+items.forEach(item => {
+    item.classList.remove('appeared');
+})
 
-document.addEventListener('DOMContentLoaded', function () {
-    items.forEach(item => {
-        item.classList.add('appeared');
-    })
-});
+items.forEach(item => {
+    item.classList.add('appeared');
+})
+
+//document.addEventListener('DOMContentLoaded', function () {
+//    items.forEach(item => {
+//        item.classList.add('appeared');
+//    })
+//});
