@@ -40,25 +40,35 @@ app.MapPost("/Index/Add", async (HttpContext context, AppDbContext db) =>
 
 app.MapPost("/Index/Edit", async (HttpContext context, AppDbContext db) =>
 {
-    var form = context.Request.Form;
+    string? idString = context.Request.Form["id"];
 
-    TaskToDo? task = await db.Tasks.FirstAsync(x => x.Id == Guid.Parse(form["id"]));
+    if (!string.IsNullOrEmpty(idString))
+    {
+        TaskToDo? task = await db.Tasks.FirstAsync(x => x.Id == Guid.Parse(idString));
+
+        task.Description = context.Request.Form["id"];
+
+        await db.SaveChangesAsync();
+    }
         
-    task.Description = form["desc"];
-
-    await db.SaveChangesAsync();
     context.Response.Redirect("/");
 });
 
 app.MapPost("/Index/Del", async (HttpContext context, AppDbContext db) =>
 {
-    var form = context.Request.Form;
+    string? idString = context.Request.Form["id"];
 
-    TaskToDo? task = await db.Tasks.FirstAsync(x => x.Id == Guid.Parse(form["id"]));
+    if (!string.IsNullOrEmpty(idString))
+    {
+        TaskToDo? task = await db.Tasks.FirstOrDefaultAsync(x => x.Id == Guid.Parse(idString));
 
-    db.Tasks.Remove(task);
+        if (task != null)
+        {
+            db.Tasks.Remove(task);
+            await db.SaveChangesAsync();
+        }
+    }
 
-    await db.SaveChangesAsync();
     context.Response.Redirect("/");
 });
 
