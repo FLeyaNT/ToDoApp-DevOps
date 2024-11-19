@@ -18,10 +18,10 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Restore dependencies
-        run: dotnet restore ./ToDoApp/ToDoApp.csproj
+        run: dotnet restore ./ToDoListApp/ToDoListApp.csproj
 
       - name: Build
-        run: dotnet build ./ToDoApp/ToDoApp.csproj
+        run: dotnet build ./ToDoListApp/ToDoListApp.csproj
 
       - name: Test
-        run: dotnet test ./ToDoApp/ToDoApp.csproj
+        run: dotnet test ./ToDoListApp/ToDoListApp.csproj
