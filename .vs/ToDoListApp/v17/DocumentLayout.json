@@ -42,7 +42,7 @@
               "RelativeDocumentMoniker": "ToDoListApp\\wwwroot\\js\\site.js",
               "ToolTip": "D:\\Apps\\ToDoListApp\\ToDoListApp\\wwwroot\\js\\site.js",
               "RelativeToolTip": "ToDoListApp\\wwwroot\\js\\site.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-11-14T17:17:53.063Z",
               "EditorCaption": ""
@@ -55,7 +55,7 @@
               "RelativeDocumentMoniker": "ToDoListApp\\Pages\\Index.cshtml",
               "ToolTip": "D:\\Apps\\ToDoListApp\\ToDoListApp\\Pages\\Index.cshtml",
               "RelativeToolTip": "ToDoListApp\\Pages\\Index.cshtml",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAgwA0AAAAHAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBsAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-13T15:36:53.01Z",
               "EditorCaption": ""
@@ -70,7 +70,8 @@
               "RelativeToolTip": "ToDoListApp\\wwwroot\\css\\Styles.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-09T10:14:54.275Z"
+              "WhenOpened": "2024-11-09T10:14:54.275Z",
+              "EditorCaption": ""
             }
           ]
         }
