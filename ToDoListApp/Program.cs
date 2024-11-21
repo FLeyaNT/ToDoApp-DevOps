@@ -46,7 +46,7 @@ app.MapPost("/Index/Edit", async (HttpContext context, AppDbContext db) =>
     {
         TaskToDo? task = await db.Tasks.FirstAsync(x => x.Id == Guid.Parse(idString));
 
-        task.Description = context.Request.Form["id"];
+        task.Description = context.Request.Form["desc"];
 
         await db.SaveChangesAsync();
     }
